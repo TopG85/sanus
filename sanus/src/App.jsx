@@ -1,15 +1,10 @@
+import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
-    <main>
-      <h1>Welcome to Sanus</h1>
-
-      <p>
-        Web Design & Development for Churches, Charities and Small Businesses.
-      </p>
-    </main>
+    <>
+      <Navbar />
+    </>
   );
 }
-
-export default App;

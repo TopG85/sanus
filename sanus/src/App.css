@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
 }
 
 main {
@@ -13,7 +13,7 @@ main {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   text-align: center;
@@ -28,4 +28,16 @@ h1 {
 p {
   max-width: 600px;
   font-size: 1.2rem;
+}
+.site-brand {
+  font-family: "Audiowide", Arial, sans-serif;
+  font-size: 2rem;
+  color: #ff8a4b;
+  text-decoration: none;
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
 }
