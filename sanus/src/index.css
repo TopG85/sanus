@@ -1,7 +1,7 @@
 :root {
   --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
+  --text-h: #a987ff;
+  --bg: #0b0f2e;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
@@ -58,7 +58,7 @@ h1,
 h2 {
   font-family: var(--heading);
   font-weight: 500;
-  color: var(--text-h);
+  color: #00e5ff;
 }
 
 h1 {
