@@ -10,13 +10,13 @@ import {
 } from "lucide-react";
 
 const navItems = [
-  { label: "Home", href: "/", icon: <Home size={16} /> },
-  { label: "Check-up", href: "/checkup", icon: <ClipboardCheck size={16} /> },
-  { label: "Projects", href: "/projects", icon: <FolderOpen size={16} /> },
-  { label: "Pricing", href: "/pricing", icon: <PoundSterling size={16} /> },
-  { label: "About", href: "/about", icon: <User size={16} /> },
-  { label: "Contact", href: "/contact", icon: <Mail size={16} /> },
-  { label: "Reviews", href: "/reviews", icon: <Star size={16} /> },
+  { label: "Home", href: "#/", icon: <Home size={16} /> },
+  { label: "Check-up", href: "#/checkup", icon: <ClipboardCheck size={16} /> },
+  { label: "Projects", href: "#/projects", icon: <FolderOpen size={16} /> },
+  { label: "Pricing", href: "#/pricing", icon: <PoundSterling size={16} /> },
+  { label: "About", href: "#/about", icon: <User size={16} /> },
+  { label: "Contact", href: "#/contact", icon: <Mail size={16} /> },
+  { label: "Reviews", href: "#/reviews", icon: <Star size={16} /> },
 ];
 
 export default function Navbar() {
