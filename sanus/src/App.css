@@ -3,11 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* Fonts */
 body {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "DM Sans", Arial, sans-serif;
 }
 
+/* Body of Site */
 main {
   min-height: 100vh;
   display: flex;
@@ -19,6 +20,7 @@ main {
   background-color: #0b0f2e;
 }
 
+/* Headings and Paragraphs */
 h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
@@ -28,10 +30,12 @@ p {
   max-width: 600px;
   font-size: 1.2rem;
 }
+
+/* Site Header & Branding */
 .site-brand {
   font-family: "Audiowide", Arial, sans-serif;
   font-size: 2rem;
-  color: #ff8a4b;
+  color: #ffcc00;
   text-decoration: none;
 }
 .site-header {
@@ -41,9 +45,23 @@ p {
   padding: 1.5rem 2rem;
   background-color: #0b0f2e;
 }
+
+/* Hero Section and Prism Background */
+main.hero {
+  min-height: calc(100svh - 96px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
 .hero {
+  display; grid;
+  place-items: center;
+  padding: 2rem;
+  text-align: center;
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100svh - 88px);
   overflow: hidden;
   isolation: isolate;
   background-color: #0b0f2e;
@@ -57,23 +75,70 @@ p {
   width: 100%;
   height: 100%;
 }
-
 .hero-bg {
   z-index: 0;
   pointer-events: none;
 }
-
 .hero-content {
   position: relative;
   z-index: 1;
+  width: 100min(100%, 760px);;
+}
+.hero-actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hero-title,
+.how-title {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.045em;
 }
 .hero-kicker {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
   color: #ffcc00;
 }
 .hero-lead {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
   color: #ffcc00;
 }
+/* How Section */
+.how-section {
+  position: relative;
+  padding: 4rem 2rem;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  color: #ffcc00;
+  background-color: #0b0f2e;
+}
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: min(100% - 4rem, 1200px);
+  margin: 2rem auto 0; 
+}
+.how-card {
+  background-color: #17233b;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;  
+}
+ 
+/* Buttons */
 .btn {
+  font-family: "Space Grotesk", sans-serif;
   display: inline-block;
   background: #f97316;
   color: #111827;
@@ -85,7 +150,15 @@ p {
 }
 
 .btn-outline {
+  font-family: "Space Grotesk", sans-serif;
   background: rgba(11, 15, 46, 0.55);
   color: #fbbf24;
   border: 2px solid #fbbf24;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .how-grid {
+    grid-template-columns: 1fr;
+  }
 }

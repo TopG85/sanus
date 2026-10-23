@@ -31,9 +31,9 @@ export default function App() {
         </div>
 
         <div className="hero-content">
-          <p className="hero-kicker">
+          <h3 className="hero-kicker">
             Websites for organisations with better things to do.
-          </p>
+          </h3>
           <h1 className="hero-title">
             Websites that get you found and trusted.
           </h1>

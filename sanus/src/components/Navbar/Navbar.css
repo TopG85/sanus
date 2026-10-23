@@ -1,3 +1,4 @@
+/* Navbar Styles */
 .navbar {
   background: #111428;
   color: rgb(255, 110, 65);
@@ -8,12 +9,12 @@
 
   padding: 1rem 2rem;
 }
-
+/* Logo Styles */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
+/* Navigation Links Styles */
 .nav-links {
   list-style: none;
 

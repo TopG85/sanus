@@ -1,3 +1,4 @@
+/* Gooey Navbar Styles */
 .gooey-nav {
   --gn-pad: 6px;
   --gn-gap: 4px;
@@ -26,7 +27,7 @@
   --gn-x: 20px;
   --gn-y: 11px;
 }
-
+/* Framed Variant */
 .gooey-nav--framed {
   padding: var(--gn-pad);
   border-radius: 999px;
@@ -35,19 +36,19 @@
   -webkit-backdrop-filter: blur(20px) saturate(1.6);
   backdrop-filter: blur(20px) saturate(1.6);
 }
-
+/* Framed Variant - Active State */
 .gooey-nav__stage {
   position: relative;
   max-width: 100%;
 }
-
+/* Framed Variant - Active State */
 .gooey-nav__canvas {
   position: absolute;
   top: 0;
   left: 0;
   pointer-events: none;
 }
-
+/* Framed Variant - Active State */
 .gooey-nav__fallback {
   position: absolute;
   top: 0;
@@ -57,7 +58,7 @@
   background: #ffb055;
   pointer-events: none;
 }
-
+/* Framed Variant - Active State */
 .gooey-nav__list {
   position: relative;
   display: flex;
@@ -67,7 +68,7 @@
   padding: 0;
   list-style: none;
 }
-
+/* Framed Variant - Active State */
 .gooey-nav__list--active {
   position: absolute;
   inset: 0;
@@ -76,11 +77,11 @@
   clip-path: inset(100%);
   pointer-events: none;
 }
-
+/* Framed Variant - Active State */
 .gooey-nav__item {
   display: flex;
 }
-
+/* Framed Variant - Active State */
 .gooey-nav__link {
   display: inline-flex;
   align-items: center;
@@ -92,6 +93,7 @@
   color: #00fffb;
   font: inherit;
   font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
@@ -131,9 +133,9 @@
     inset 0 1px 0 var(--gn-frame-highlight);
   pointer-events: none;
 }
-
+/* Framed Variant - Active State */
 @media (hover: hover) {
   .gooey-nav__link:hover {
-    color: #e8540f;
+    color: #ffcc00;
   }
 }
