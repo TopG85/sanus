@@ -11,11 +11,11 @@ export default function Home() {
             height={3.5}
             baseWidth={5.5}
             scale={4.6}
-            hueShift={22}
-            colorFrequency={1.75}
-            glow={0.6}
+            hueShift={25}
+            colorFrequency={1.8}
+            glow={2}
             colors={["#0b0f2e", "#ff2e97", "#00e5ff", "#7b2cbf", "#ff8c42"]}
-            saturation={1.5}
+            saturation={2}
             noise={0}
             interactive
             hoverStrength={2}
