@@ -1,0 +1,103 @@
+.featured {
+  max-width: 64rem;
+  margin: 0 auto 4rem;
+  --edge-proximity: 100;
+}
+
+.featured::before,
+.featured::after,
+.feature > .edge-light {
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  min-height: 22rem;
+}
+
+.featured-image {
+  position: relative;
+}
+.featured-section {
+  background: #0b0f2e;
+}
+.featured-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.featured > .border-glow-inner {
+  border-radius: 19px;
+  overflow: hidden;
+}
+.featured-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #5eead4;
+  color: #111827;
+  font-weight: 900;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.35rem;
+  border: 2px solid #111827;
+}
+
+.featured-pixel {
+  display: block;
+}
+
+.featured-body {
+  padding: 2.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.featured-label {
+  color: #5eead4;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-family: "Audiowide", sans-serif;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.featured-body h2 {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #ff2e97;
+  margin: 0 0 0.75rem;
+}
+
+.featured-body .featured-text {
+  color: #ffcc00;
+  margin-bottom: 1.5rem;
+}
+
+.featured-footer {
+  padding: 1rem 2rem;
+  text-align: right;
+}
+
+.featured-link {
+  color: #00e5ff;
+  font-weight: 700;
+  font-family: "Audiowide", sans-serif;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+}

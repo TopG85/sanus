@@ -1,4 +1,5 @@
 import Prism from "../components/Prism/Prism";
+import FeaturedProject from "../components/FeaturedProject/FeaturedProject";
 
 export default function Home() {
   return (
@@ -11,11 +12,11 @@ export default function Home() {
             height={3.5}
             baseWidth={5.5}
             scale={4.6}
-            hueShift={25}
-            colorFrequency={1.8}
-            glow={2}
-            colors={["#0b0f2e", "#ff2e97", "#00e5ff", "#7b2cbf", "#ff8c42"]}
-            saturation={2}
+            hueShift={3}
+            colorFrequency={2.5}
+            glow={1.6}
+            colors={["#0b0b0f", "#2b2dff", "#9b5cff", "#ff2e88", "#00f5ff"]}
+            saturation={2.0}
             noise={0}
             interactive
             hoverStrength={2}
@@ -74,6 +75,10 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </section>
+
+      <section className="featured-section">
+        <FeaturedProject />
       </section>
     </>
   );
