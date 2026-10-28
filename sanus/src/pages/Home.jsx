@@ -14,9 +14,9 @@ export default function Home() {
             scale={4.6}
             hueShift={3}
             colorFrequency={2.5}
-            glow={1.6}
-            colors={["#0b0b0f", "#2b2dff", "#9b5cff", "#ff2e88", "#00f5ff"]}
-            saturation={2.0}
+            glow={1.2}
+            colors={["#152641", "#e8f4fc", "#3b17ff", "#c3f84a"]}
+            saturation={1.3}
             noise={0}
             interactive
             hoverStrength={2}

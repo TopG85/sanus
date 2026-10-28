@@ -9,14 +9,14 @@ export default function FeaturedProject() {
     <BorderGlow
       className="featured"
       edgeSensitivity={30}
-      glowColor="330 100 60"
+      glowColor="78 92 63"
       backgroundColor="#0b0f2e"
       borderRadius={20}
       glowRadius={60}
-      glowIntensity={3.0}
+      glowIntensity={4.0}
       coneSpread={25}
       animated={true}
-      colors={["#c084fc", "#f472b6", "#38bdf8"]}
+      colors={["#c3f84a", "#c3f84a", "#c3f84a"]}
     >
       <div className="featured-grid">
         <div className="featured-image">
@@ -26,12 +26,12 @@ export default function FeaturedProject() {
 
         <PixelCard
           className="featured-pixel"
-          colors={["#00e5ff", "#ff8c42", "#ff2e97"]}
-          glowColor="#9484ff"
+          colors={["#c3f84a"]}
+          glowColor="#e8f4fc"
           shape="square"
           origin="center"
           gap={15}
-          pixelSize={10}
+          pixelSize={5}
           speed={72}
           revealDuration={600}
           spotlight={1}

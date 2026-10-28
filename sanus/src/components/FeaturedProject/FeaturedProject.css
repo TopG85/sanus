@@ -7,6 +7,7 @@
 .featured::before,
 .featured::after,
 .feature > .edge-light {
+  color: #c3f84a;
   opacity: 1 !important;
   transition: none !important;
 }
@@ -21,7 +22,7 @@
   position: relative;
 }
 .featured-section {
-  background: #0b0f2e;
+  background: #152641;
 }
 .featured-image img {
   display: block;
@@ -31,21 +32,24 @@
 }
 .featured > .border-glow-inner {
   border-radius: 19px;
-  overflow: hidden;
+  color: #c3f84a;
+  background: transparent;
+  overflow:;
 }
 .featured-badge {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: #5eead4;
-  color: #111827;
+  background: #c3f84a;
+  color: #3b17ff;
+  font-family: "RX100-Regulars", sans-serif;
   font-weight: 900;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 0.5rem 0.8rem;
   border-radius: 0.35rem;
-  border: 2px solid #111827;
+  border: 2px solid #3b17ff;
 }
 
 .featured-pixel {
@@ -59,43 +63,49 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  background: transparent;
 }
 
 .featured-label {
-  color: #5eead4;
+  color: #e8f4fc;
   text-transform: uppercase;
   font-size: 0.85rem;
-  font-family: "Audiowide", sans-serif;
+  font-family: "Array-BoldWide", sans-serif;
   letter-spacing: 0.06em;
   font-weight: 900;
   margin-bottom: 0.5rem;
 }
 
 .featured-body h2 {
-  font-family: "Audiowide", sans-serif;
+  font-family: "Array-BoldWide", sans-serif;
   font-weight: 800;
   font-size: 2rem;
-  color: #ff2e97;
+  color: #c3f84a;
   margin: 0 0 0.75rem;
 }
 
 .featured-body .featured-text {
-  color: #ffcc00;
+  color: #e8f4fc;
   margin-bottom: 1.5rem;
 }
 
 .featured-footer {
   padding: 1rem 2rem;
   text-align: right;
+  background: #e8f4fc;
 }
 
 .featured-link {
-  color: #00e5ff;
+  color: #3b17ff;
   font-weight: 700;
-  font-family: "Audiowide", sans-serif;
+  font-family: "RX100-Regular", sans-serif;
   text-decoration: none;
 }
-
+.featured-text {
+  font-family: "RX100-Regular", sans-serif;
+  color: #e8f4fc;
+  margin-bottom: 1.5rem;
+}
 @media (max-width: 768px) {
   .featured-grid {
     grid-template-columns: 1fr;

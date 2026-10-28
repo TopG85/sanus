@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import BorderGlow from "../components/BorderGlow/BorderGlow";
 import { projects } from "../data/projects";
 
 const filters = [
@@ -23,12 +24,18 @@ export default function Projects() {
     <section className="projects-page">
       <h1 className="projects-title">Projects</h1>
 
-      <div className="projects-toggle" role="group" aria-label="Filter projects">
+      <div
+        className="projects-toggle"
+        role="group"
+        aria-label="Filter projects"
+      >
         {filters.map((f) => (
           <button
             key={f.key}
             type="button"
-            className={active === f.key ? "toggle-btn toggle-btn--active" : "toggle-btn"}
+            className={
+              active === f.key ? "toggle-btn toggle-btn--active" : "toggle-btn"
+            }
             onClick={() => setActive(f.key)}
           >
             {f.label}
@@ -38,11 +45,26 @@ export default function Projects() {
 
       <div className="projects-grid">
         {shown.map((p) => (
-          <Link key={p.slug} to={`/projects/${p.slug}`} className="project-card">
-            <p className="project-type">{typeLabels[p.type]}</p>
-            <h2>{p.title}</h2>
-            <p>{p.summary}</p>
-          </Link>
+          <BorderGlow
+            key={p.slug}
+            className="project-glow"
+            edgeSensitivity={30}
+            glowColor="78 92 63"
+            backgroundColor="#0b0f2e"
+            borderColor="#c3f84a"
+            borderRadius={20}
+            glowRadius={60}
+            glowIntensity={4.0}
+            coneSpread={25}
+            animated={true}
+            colors={["#c3f84a", "#c3f84a", "#c3f84a"]}
+          >
+            <Link to={`/projects/${p.slug}`} className="project-card">
+              <p className="project-type">{typeLabels[p.type]}</p>
+              <h2>{p.title}</h2>
+              <p>{p.summary}</p>
+            </Link>
+          </BorderGlow>
         ))}
       </div>
     </section>

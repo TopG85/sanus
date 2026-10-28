@@ -5,7 +5,6 @@
 }
 /* Fonts */
 body {
-  font-family: "DM Sans", Arial, sans-serif;
 }
 
 /* Body of Site */
@@ -17,7 +16,7 @@ main {
   align-items: center;
   text-align: center;
   padding: 2rem;
-  background-color: #0b0f2e;
+  background-color: #3b17ff;
 }
 
 /* Headings and Paragraphs */
@@ -32,23 +31,25 @@ p {
 }
 
 /* Site Header & Branding */
+/* Force the custom Array font exclusively onto your site title elements */
 .site-brand {
-  font-family: "Audiowide", Arial, sans-serif;
+  font-family: "Array-BoldWide", sans-serif !important;
   font-size: 2rem;
-  color: #ffcc00;
-  text-decoration: none;
+  color: #c3f84a;
 }
+
 .site-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 2rem;
-  background-color: #0b0f2e;
+  background-color: #152641;
 }
 
 /* Hero Section and Prism Background */
 main.hero {
   min-height: calc(100svh - 96px);
+  font-family: "Array-BoldWide", serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,8 +94,8 @@ main.hero {
   flex-wrap: wrap;
 }
 .hero-title {
-  font-family: "Audiowide", sans-serif;
   font-weight: 700;
+  color: #c3f84a;
   letter-spacing: -0.045em;
 }
 
@@ -102,15 +103,15 @@ main.hero {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
-  font-family: "Space Grotesk", sans-serif;
-  color: #ffcc00;
+  font-family: "RX100-Regular", sans-serif;
+  color: #c3f84a;
 }
 .hero-lead {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
-  font-family: "Space Grotesk", sans-serif;
-  color: #ffcc00;
+  font-family: "RX100-Regular", sans-serif;
+  color: #c3f84a;
 }
 /* How Section */
 .how-section {
@@ -119,9 +120,8 @@ main.hero {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  font-family: "Space Grotesk", sans-serif;
-  color: #ffcc00;
-  background-color: #0b0f2e;
+  color: #152641;
+  background-color: #152641;
 }
 .how-grid {
   display: grid;
@@ -131,18 +131,24 @@ main.hero {
   margin: 2rem auto 0;
 }
 .how-card {
-  background-color: #17233b;
+  background-color: #e8f4fc;
+  font-family: "RX100-Regular", sans-serif;
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
 }
+.how-card p {
+  font-family: "RX100-Regular", sans-serif;
+  color: #152641;
+  margin: 0;
+}
 
 /* Buttons */
 .btn {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "RX100-Regular", sans-serif;
   display: inline-block;
-  background: #f97316;
-  color: #111827;
+  background: #c3f84a;
+  color: #3b17ff;
   font-weight: 900;
   font-size: 1.1rem;
   padding: 0.85rem 2.2rem;
@@ -151,10 +157,10 @@ main.hero {
 }
 
 .btn-outline {
-  font-family: "Space Grotesk", sans-serif;
-  background: rgba(11, 15, 46, 0.55);
-  color: #fbbf24;
-  border: 2px solid #fbbf24;
+  font-family: "RX100-Regular", sans-serif;
+  background: transparent;
+  color: #c3f84a;
+  border: 2px solid #3b17ff;
 }
 
 /* Media Queries */
@@ -170,7 +176,7 @@ main.hero {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  background-color: #0b0f2e;
+  background-color: #152641;
   min-height: 100vh;
 }
 
@@ -190,7 +196,7 @@ main.hero {
 }
 
 .project-page .project-title {
-  color: #ff2e97;
+  color: #c3f84a;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
@@ -202,16 +208,24 @@ main.hero {
 }
 
 .project-page .project-summary {
-  color: #1a1f4b;
+  color: #e8f4fc;
+  font-family: "Array-BoldWide", Arial, sans-serif;
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
 
+.project-page .project-heading {
+  font-family: "Array-BoldWide", Arial, sans-serif;
+  color: #fbbf24;
+  font-size: 1.4rem;
+  margin: 2rem 0 0.75rem;
+}
+
 .projects-title {
-  font-family: "Audiowide", Arial, sans-serif;
+  font-family: "Array-BoldWide", Arial, sans-serif;
   font-weight: 800;
   font-size: 2.5rem;
-  color: #ff2e97;
+  color: #c3f84a;
   margin-bottom: 1.5rem;
 }
 
@@ -227,7 +241,7 @@ main.hero {
 }
 
 .project-heading {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Array-BoldWide", Arial, sans-serif;
   color: #fbbf24;
   font-size: 1.4rem;
   margin: 2rem 0 0.75rem;
@@ -270,16 +284,17 @@ main.hero {
 
 .toggle-btn {
   background: transparent;
-  color: #00e5ff;
-  border: 2px solid #00e5ff;
+  color: #c3f84a;
+  border: #c3f84a;
   border-radius: 999px;
   padding: 0.5rem 1.25rem;
   font-weight: 600;
   cursor: pointer;
+  font-family: "RX100-Regular", sans-serif;
 }
 
 .toggle-btn--active {
-  background: #00e5ff;
+  background: #c3f84a;
   color: #0b0f2e;
 }
 
@@ -294,16 +309,23 @@ main.hero {
   display: block;
   padding: 1.5rem;
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 46, 151, 0.35);
+  background: transparent;
+  border: 1px solid #c3f84a;
   text-decoration: none;
-  color: #ffe8d6;
+  color: #152641;
 }
 
 .project-card h2 {
-  font-family: "Poppins", Arial, sans-serif;
-  color: #fbbf24;
+  font-family: "Array-BoldWide", Arial, sans-serif;
+  color: #c3f84a;
   font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.project-card p {
+  color: #e8f4fc;
+  font-family: "RX100-Regular", Arial, sans-serif;
+  font-size: 1rem;
   margin: 0.5rem 0;
 }
 
@@ -313,6 +335,18 @@ main.hero {
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
+.project-glow {
+  height: 100%;
+}
+.project-glow .project-card {
+  height: 100%;
+  margin: 0;
+}
+.project-glow > .border-glow-glow {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
 /* Individual Project Page */
 .detail-page {
@@ -320,19 +354,20 @@ main.hero {
   margin: 0 auto;
   padding: 8rem 2rem 4rem;
   min-height: 100vh;
-  background: #0b0f2e;
+  background: #152641;
   color: #ffe8d6;
   text-align: left;
 }
 
 .detail-back {
-  color: #00e5ff;
+  font-family: "RX100-Regular", Arial, sans-serif;
+  color: #e8f4fc;
   text-decoration: none;
   font-weight: 600;
 }
 
 .detail-type {
-  color: #00e5ff;
+  color: #e8f4fc;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-size: 0.85rem;
@@ -340,27 +375,29 @@ main.hero {
 }
 
 .detail-title {
-  font-family: "Audiowide", Arial, sans-serif;
+  font-family: "RX100-Regular", Arial, sans-serif;
   font-weight: 800;
   font-size: 2.5rem;
-  color: #ff2e97;
+  color: #c3f84a;
   margin: 0.5rem 0;
 }
 
 .detail-date {
-  color: #fbbf24;
+  color: #e8f4fc;
   margin-bottom: 1rem;
 }
 
 .detail-summary {
+  font-family: "RX100-Regular", Arial, sans-serif;
+  color: #e8f4fc;
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
 
 .detail-heading {
-  font-family: "Poppins", Arial, sans-serif;
-  color: #fbbf24;
+  font-family: "RX100-Regular", Arial, sans-serif;
+  color: #e8f4fc;
   font-size: 1.4rem;
   margin: 2rem 0 0.75rem;
 }
@@ -374,15 +411,17 @@ main.hero {
 }
 
 .detail-tech li {
-  border: 1px solid #00e5ff;
-  color: #00e5ff;
+  border: 1px solid #c3f84a;
+  color: #c3f84a;
   border-radius: 999px;
   padding: 0.3rem 0.9rem;
   font-size: 0.9rem;
+  font-family: "RX100-Regular", Arial, sans-serif;
 }
 
 .detail-points {
-  color: #ffcc00;
+  font-family: "RX100-Regular", Arial, sans-serif;
+  color: #e8f4fc;
   padding-left: 1.25rem;
   line-height: 1.7;
 }

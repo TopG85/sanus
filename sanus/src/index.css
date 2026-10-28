@@ -1,25 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
-/* Global Styles */
-:root {
-  --font-brand: "Audiowide", sans-serif;
-  --font-display: "Space Grotesk", sans-serif;
-  --font-body: "DM Sans", Arial, sans-serif;
-
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: #0b0f2e;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
+/* ==========================================
+   1. GLOBAL WEBFONT DEFINITIONS 
+   ========================================== */
+@font-face {
+  font-family: "Array-BoldWide";
+  src: url("/fonts/Array-BoldWide.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
-/* Dark Mode Styles */
+@font-face {
+  font-family: "RX100-Regular";
+  src: url("/fonts/RX100-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* ==========================================
+   2. DARK MODE VARIABLE CONFIGURATION
+   ========================================== */
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
@@ -33,21 +31,36 @@
     --social-bg: rgba(47, 48, 58, 0.5);
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+    --mono: monospace;
   }
 
   #social .button-icon {
     filter: invert(1) brightness(2);
   }
 }
-/* Body and Heading Styles */
+
+/* ==========================================
+   3. GLOBAL LAYOUT STYLES (Default Fonts Only)
+   ========================================== */
 body {
-  font-family: "DM Sans", Arial, sans-serif;
   margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background-color: #152641;
+  color: var(--text, #333);
 }
-/* Heading Styles */
+
 h1,
-h2 {
-  font-family: var(--heading);
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
   color: #ffcc00;
 }
@@ -56,31 +69,35 @@ h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
-  @media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
+  h1 {
     font-size: 36px;
     margin: 20px 0;
   }
 }
+
 h2.how-title {
   font-size: 24px;
-  font-family: "Audiowide", sans-serif;
+  font-family: "Array-BoldWide", sans-serif;
   line-height: 118%;
   letter-spacing: -0.24px;
-  color: #00fffb;
+  color: #e8f4fc;
   margin: 0 0 8px;
-  @media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
+  h2.how-title {
     font-size: 20px;
   }
 }
+
 h3 {
-  color: #ffcc00;
-}
-p {
-  color: #ffcc00;
-  margin: 0;
+  font-family: "Array-BoldWide", sans-serif;
+  color: #3b17ff;
 }
 
-/* Code Block Styles */
 code,
 .counter {
   font-family: var(--mono);

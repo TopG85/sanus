@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <header className="site-header">
       <span className="site-brand">SANUS</span>
-      <GooeyNav items={navItems} color="#55e9b8" size="md" />
+      <GooeyNav items={navItems} color="#c3f84a" size="md" />
     </header>
   );
 }
