@@ -13,7 +13,7 @@ export default function FeaturedProject() {
       backgroundColor="#0b0f2e"
       borderRadius={20}
       glowRadius={60}
-      glowIntensity={4.0}
+      glowIntensity={3.0}
       coneSpread={25}
       animated={true}
       colors={["#c3f84a", "#c3f84a", "#c3f84a"]}
