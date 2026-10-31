@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../data/projects";
+import herokulogo from "../assets/Heroku-Logo-Mark-Light-RGB.webp";
 
 const typeLabels = {
   client: "Client project",
@@ -22,7 +23,8 @@ const techIcons = {
   Django: "https://cdn.simpleicons.org/django/44B78B",
   Bootstrap: "https://cdn.simpleicons.org/bootstrap/7952B3",
   Cloudinary: "https://cdn.simpleicons.org/cloudinary/3448C5",
-  Heroku: "https://cdn.simpleicons.org/heroku/FFFFFF",
+  Heroku: herokulogo,
+  PostgreSQL: "https://cdn.simpleicons.org/postgresql/336791",
 };
 
 export default function ProjectPage() {

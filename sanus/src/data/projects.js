@@ -4,6 +4,10 @@ import vinelifeBefore2 from "../assets/vinelife-before-2.webp";
 import vinelifeAfter1 from "../assets/vinelifeAfter1.webp";
 import vinelifeThought from "../assets/vinelifeThought.webp";
 import bolusengineShot from "../assets/bolusengine.webp";
+import bitesize from "../assets/bitesize.webp";
+import shutterspace from "../assets/shutterspace.webp";
+import constcollection from "../assets/constcollection.webp";
+
 
 export const projects = [
     {
@@ -77,10 +81,12 @@ export const projects = [
         year: "2026",
         date: "September 2026",
         image: bolusengineShot,
-        summary:
+        summary: [
             "A personal health app that calculates meal and correction insulin doses from a built-in food library.",
-        overview:
+        ],
+        overview: [
             "BolusEnging is a personal-use app built to make daily insulin dosing calucutions faster and more accurate. It allows users to select foods from a built-in library, calculates the total carbohydrate content of a meal, and provides recommended insulin doses based on user settings.",
+        ],
         problem: [
             "Manual calculations for insulin dosing are time-consuming and prone to error.",
             "Users need a quick and reliable way to determine carbohydrate intake and corresponding insulin doses.",
@@ -124,11 +130,46 @@ export const projects = [
         title: "Bitesize Church",
         type: "client",
         date: "March 2026",
-        summary: "A website prototype and CMS build, mapped out with Relume before development.",
-        technologies: ["Wagtail CMS", "Python", "Tailwind CSS", "JavaScript", "Heroku"],
-        points: [
-            "Planned the site structure with Relume, then built a Wagtail CMS prototype giving the client easy content control.",
+        year: "2026",
+        image: bitesize,
+        summary: [
+            "A modern, affordable website for Bitesize Church in Colshaw, Wilmslow, Cheshire - designed so the owner can easily update content, just like posting on facebook, but with a unique Bitesize theme.",
         ],
+        problem: [
+            "No website — only a Facebook page for updates.",
+            "Owner concerned about the cost of a website.",
+            "Needed a way to update content easily, without technical skills.",
+            "Limited online reach and discoverability.",
+        ],
+        solution: [
+            "Developed with Django and Wagtail CMS for easy, Facebook - like content updates.",
+            "Owner can log in and add/edit news, events, and images without coding.",
+            "Tailwind CSS for a unique, on-brand look.",
+            "Mobile-first, accessible design.",
+            "Affordable and scalable for future needs.",
+        ],
+        outcome: [
+            "Bitesize Church now has a professional, easy-to-update website. The owner can manage content without technical help, and the church’s activities are more visible to the local community and beyond.",
+        ],
+        features: [
+            {
+                title: "Easy Content Management:",
+                text: "Owner can update pages, news, and events via a user-friendly admin panel.",
+            },
+            {
+                title: "Mobile-First Design",
+                text: "Looks great on phones, tablets, and desktops.",
+            },
+            {
+                title: "On-Brand Styling",
+                text: "Custom Tailwind CSS for a Bitesize Church look and feel.",
+            },
+            {
+                title: "Scalable Platform",
+                text: "Built with Django and Wagtail for future growth.",
+            },
+        ],
+        technologies: ["Wagtail CMS", "Python", "Tailwind CSS", "JavaScript", "Heroku"],
         results: "Lighthouse scores of 98 for Performance, 93 for Accessibility and 91 for SEO.",
         live: "https://bitesize-church-dbbfc2ed86b3.herokuapp.com/",
         code: "https://github.com/TopG85/Bitesize-Church-Colshaw",
@@ -136,12 +177,43 @@ export const projects = [
     {
         slug: "shutterspace",
         title: "ShutterSpace",
-        type: "personal",
+        type: "client",
         date: "September to October 2025",
-        summary: "A photography portfolio platform with user accounts and dynamic portfolios.",
-        technologies: ["Python", "Django", "Bootstrap", "Cloudinary", "Heroku"],
+        image: shutterspace,
+        summary: [
+            "A full-stack photography portfolio platform designed for photographers to showcase their work, build a profile and connect through thoughtful community features.",
+        ],
+        overview: [
+            "ShutterSpace provides a focused alternative to general-purpose social platforms: a clean, responsive space that gives photography the visual priority. It combines professional presentation with community tools so photographers can publish work and engage with other creators.",
+        ],
+        features: [
+            {
+                title: "Photographer profiles",
+                text: "Profiles with avatars, hero images, biographies and links.",
+            },
+            {
+                title: "Photo uploads",
+                text: "Photos are uploaded and delivered through Cloudinary.",
+            },
+            {
+                title: "Community interaction",
+                text: "Likes, comments and notifications encourage engagement.",
+            },
+            {
+                title: "Visibility controls",
+                text: "Public and private visibility controls for portfolio management.",
+            },
+            {
+                title: "Responsive design",
+                text: "Layouts designed for desktop, tablet and mobile browsing.",
+            },
+        ],
+        technologies: ["HTML5", "Bootstrap", "JavaScript", "Python", "Django", "PostgreSQL", "Cloudinary", "Heroku"],
         points: [
             "Built a full-stack Django platform with user authentication, dynamic portfolios and automatic image optimisation.",
+            "Designed Django ORM models for profiles, photos, comments, likes and notifications.",
+            "Configured PostgreSQL for production with environment-based settings.",
+            "Used Cloudinary for media hosting, image optimisation and scalable delivery.",
         ],
         results: "Lighthouse scores of 95 for Performance, 96 for Accessibility and 91 for SEO.",
         live: "https://django-project-shutterspace-a676bf7fbd5b.herokuapp.com/",
@@ -151,11 +223,55 @@ export const projects = [
         slug: "constcollection",
         title: "Constcollection",
         type: "hackathon",
+        role: "Team Hackathon Project, Django Backend (Art Categorisation System)",
+        year: "2025",
         date: "October 2025",
-        summary: "An accessible artist website delivered on deadline during a team hackathon.",
-        technologies: ["Python", "Django", "JavaScript", "Bootstrap", "Heroku"],
-        points: ["Split frontend and backend work across the team using Agile practices."],
-        results: "",
+        image: constcollection,
+        summary:
+            "A Django-built, responsive portfolio site for Swedish artist Cecilia Kristoffersson, created during a student hackathon.",
+        overview:
+            "Constcollection is a minimalist, accessible website built to showcase the work of Swedish artist Cecilia Kristoffersson. The site's main goal was to keep visitors' attention on the artwork itself, while giving the artist a way to manage her own gallery content without ever needing to touch the Django admin panel directly. It includes a front-end curator mode for adding, editing and organising artwork, separate sections for the gallery, biography and past exhibitions, and a colour palette drawn directly from one of the artist's own paintings. It is deployed on Heroku with a PostgreSQL database and Cloudinary for image hosting.",
+        problem: [
+            "The artist needed a professional online presence to showcase her collections",
+            "Managing content shouldn't require technical knowledge of a Django admin panel",
+            "The design needed to stay out of the way and let the artwork be the focus",
+            "The site needed to meet strong accessibility and colour-contrast standards",
+        ],
+        solution: [
+            "Built a curator mode so the artist can add, edit and organise media from the site itself",
+            "Modelled Media, Category and About Section content separately in Django for flexibility",
+            "A minimalist navigation bar, tucked away in a toggle so it doesn't distract from the art",
+            "Colour and typography chosen to reflect the artist's own visual style",
+            "All pages tested against WCAG AAA colour contrast standards",
+        ],
+        features: [
+            {
+                title: "Curator admin panel",
+                text: "Add, edit or delete artwork, categories and exhibitions from the front end.",
+            },
+            {
+                title: "Gallery",
+                text: "Displays all art pieces, filterable by category.",
+            },
+            {
+                title: "About and exhibitions pages",
+                text: "Biography and exhibition history, separate from the gallery itself.",
+            },
+            {
+                title: "Toggle navigation",
+                text: "Keeps the interface minimal so the artwork stays the focus.",
+            },
+            {
+                title: "WCAG AAA contrast",
+                text: "All colour combinations tested for the strictest accessibility standards.",
+            },
+        ],
+        technologies: ["HTML5", "CSS", "Python", "Django", "JavaScript", "Bootstrap", "Heroku", "PostgreSQL", "Cloudinary"],
+        points: [
+            "Built the Django backend categorisation system, letting the artist organise her media into categories that power how art is grouped and filtered across the site.",
+        ],
+        outcome:
+            "The team delivered a working, deployed portfolio site within the hackathon timeframe, with nearly every page passing HTML validation cleanly and all colour choices meeting WCAG AAA contrast requirements. A few known bugs remain around delete-confirmation modals in curator mode, documented in the project README. Full delete functionality is still available through the Django admin panel as a working alternative. The category system works entirely behind the scenes: visitors never see it directly, but it powers how art is grouped and filtered throughout the site.",
         live: "https://hackathon-constcollection-e94b800f4c67.herokuapp.com/",
         code: "https://github.com/SourTarte/hackathon-project-constcollection",
     },
