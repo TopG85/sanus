@@ -359,6 +359,13 @@ main.hero {
   text-align: left;
 }
 
+.detail-page h2 {
+  font-family: "Array-BoldWide", Arial, sans-serif;
+  color: #c3f84a;
+  font-size: 1.4rem;
+  margin: 2rem 0 0.75rem;
+}
+
 .detail-back {
   font-family: "RX100-Regular", Arial, sans-serif;
   color: #e8f4fc;
@@ -368,6 +375,7 @@ main.hero {
 
 .detail-type {
   color: #e8f4fc;
+  font-family: "RX100-Regular", Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-size: 0.85rem;
@@ -375,7 +383,7 @@ main.hero {
 }
 
 .detail-title {
-  font-family: "RX100-Regular", Arial, sans-serif;
+  font-family: "Array-BoldWide", Arial, sans-serif;
   font-weight: 800;
   font-size: 2.5rem;
   color: #c3f84a;
@@ -411,7 +419,6 @@ main.hero {
 }
 
 .detail-tech li {
-  border: 1px solid #c3f84a;
   color: #c3f84a;
   border-radius: 999px;
   padding: 0.3rem 0.9rem;
@@ -431,4 +438,97 @@ main.hero {
   gap: 0.75rem;
   margin-top: 2.5rem;
   flex-wrap: wrap;
+}
+.detail-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.detail-image {
+  max-height: 420px;
+  width: auto;
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.before-grid img {
+  max-height: 420px;
+  width: auto;
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.detail-role {
+  font-family: "RX100-Regular", sans-serif;
+  color: #e8f4fc;
+  margin-bottom: 1rem;
+}
+
+.detail-text {
+  font-family: "RX100-Regular", sans-serif;
+  color: #e8f4fc;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.detail-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.detail-date {
+  color: #e8f4fc;
+  font-family: "RX100-Regular", Arial, sans-serif;
+  margin-bottom: 1rem;
+}
+.detail-feature {
+  border: #c3f84a 1px solid;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.detail-feature h3 {
+  font-family: "RX100-Regular", sans-serif;
+  color: #c3f84a;
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+}
+
+.detail-feature p {
+  font-family: "RX100-Regular", sans-serif;
+  color: #e8f4fc;
+  margin: 0;
+}
+.detail-tech li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.detail-tech img {
+  width: 18px;
+  height: 18px;
+}
+
+.before-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+.feature-shot {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.shot figcaption {
+  color: #fbbf24;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
 }

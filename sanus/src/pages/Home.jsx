@@ -12,11 +12,11 @@ export default function Home() {
             height={3.5}
             baseWidth={5.5}
             scale={4.6}
-            hueShift={3}
-            colorFrequency={2.5}
-            glow={1.2}
-            colors={["#152641", "#e8f4fc", "#3b17ff", "#c3f84a"]}
-            saturation={1.3}
+            hueShift={2}
+            colorFrequency={2}
+            glow={1.5}
+            colors={["#152641", "#3b17ff", "#c3f84a"]}
+            saturation={2.3}
             noise={0}
             interactive
             hoverStrength={2}
@@ -32,7 +32,7 @@ export default function Home() {
             Websites for organisations with better things to do.
           </p>
           <h1 className="hero-title">
-            Websites that get you found and trusted.
+            WEBSITE THAT GET YOU FOUND AND TRUSTED.
           </h1>
           <p className="hero-lead">
             I design and build websites for churches, charities and
