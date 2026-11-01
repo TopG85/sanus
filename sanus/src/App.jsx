@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import ProjectPage from "./pages/ProjectPage";
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
   return (
@@ -19,6 +20,8 @@ export default function App() {
         <Route path="/contact" element={<p>Contact coming soon</p>} />
         <Route path="/reviews" element={<p>Leave a review coming soon</p>} />
       </Routes>
+
+      <Footer />
     </>
   );
 }
