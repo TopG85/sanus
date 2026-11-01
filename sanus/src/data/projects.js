@@ -7,6 +7,8 @@ import bolusengineShot from "../assets/bolusengine.webp";
 import bitesize from "../assets/bitesize.webp";
 import shutterspace from "../assets/shutterspace.webp";
 import constcollection from "../assets/constcollection.webp";
+import openweatherLogo from "../assets/OpenWeather-Master-Logo RGB.webp";
+import truthfulNewsShot from "../assets/truthfulnews.webp";
 
 
 export const projects = [
@@ -177,7 +179,7 @@ export const projects = [
     {
         slug: "shutterspace",
         title: "ShutterSpace",
-        type: "client",
+        type: "personal",
         date: "September to October 2025",
         image: shutterspace,
         summary: [
@@ -276,15 +278,60 @@ export const projects = [
         code: "https://github.com/SourTarte/hackathon-project-constcollection",
     },
     {
+
         slug: "truthful-news",
         title: "Truthful News",
         type: "hackathon",
+        role: "Team Hackathon Project, Wireframes & UX Design",
+        year: "2026",
         date: "September 2025",
-        summary: "A news platform that pulls in live stories from a news API.",
-        technologies: ["JavaScript", "Bootstrap", "REST APIs", "HTML", "CSS"],
-        points: [
-            "Integrated a live news API so content stays current, rather than relying on static pages.",
+        image: truthfulNewsShot,
+        summary:
+            "A hackathon-built, real-time news and fact-checking platform designed to combat misinformation and promote media literacy through clear, accessible, verified content.",
+        overview:
+            "Truthful News was built by a small team over a hackathon sprint, with the goal of helping people navigate current events confidently, whether they're beginners, non-native speakers, or critical thinkers looking to verify a claim before sharing it. The site combines short, clear news updates with tools to fact-check trending claims, alongside a local weather forecast as a small bonus feature.",
+        problem: [
+            "Misinformation spreads quickly online, influencing public opinion and decision-making",
+            "Many news sources aren't accessible to non-native speakers or new internet users",
+            "People need a fast way to check whether a viral claim or headline is actually true",
+            "Existing news sites are rarely designed with accessibility or media literacy as a priority",
         ],
+        points: [
+            "Designed the wireframes, establishing layouts that prioritised accessibility and a clear user experience.",
+            "The wireframes guided the rest of the team's development work.",
+        ],
+        solution: [
+            "Short, plain-language news updates instead of dense, jargon-heavy articles",
+            "A dedicated fact-check section pairing each claim with its verdict and source",
+            "Mobile-first, responsive layout tested across phone, tablet and desktop breakpoints",
+            "Semantic HTML and ARIA labelling throughout to support screen readers and assistive technology",
+            "Wireframes designed with accessibility and clear content hierarchy as the starting point",
+        ],
+        features: [
+            {
+                title: "Fact-check cards",
+                text: "Each claim is shown with its verdict, source and a timestamp for transparency.",
+            },
+            {
+                title: "Trending claims alerts",
+                text: "Surfaces claims currently being flagged as false or misleading.",
+            },
+            {
+                title: "Search and filtering",
+                text: "Lets users quickly find claims or topics relevant to them.",
+            },
+            {
+                title: "Local weather forecast",
+                text: "A small added-value feature alongside the news content.",
+            },
+            {
+                title: "Accessibility-first build",
+                text: "WCAG-compliant, with semantic markup and clear, readable typography.",
+            },
+        ],
+        technologies: ["HTML5", "CSS", "Bootstrap", "JavaScript", "NewsAPI", "Google Fact Check API", "OpenWeather API"],
+        outcome:
+            "The team shipped a working, accessible fact-checking platform within the hackathon timeframe, passing W3C HTML and CSS validation with no errors and meeting WCAG accessibility targets.",
         results: "",
         live: "https://dylanaustin-thedreamer.github.io/Global-Trends/",
         code: "https://github.com/DylanAustin-TheDreamer/Global-Trends",

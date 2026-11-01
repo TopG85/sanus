@@ -1,6 +1,8 @@
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../data/projects";
 import herokulogo from "../assets/Heroku-Logo-Mark-Light-RGB.webp";
+import newsapi from "../assets/NewsAPI-logo.webp";
+import openweatherLogo from "../assets/OpenWeather-Master-Logo RGB.webp";
 
 const typeLabels = {
   client: "Client project",
@@ -14,6 +16,7 @@ const techIcons = {
   "Tailwind CSS": "https://cdn.simpleicons.org/tailwindcss/06B6D4",
   JavaScript: "https://cdn.simpleicons.org/javascript/F7DF1E",
   "Google Calendar API": "https://cdn.simpleicons.org/googlecalendar/4285F4",
+  "Google Fact Check API": "https://cdn.simpleicons.org/google/4285F4",
   "React Native": "https://cdn.simpleicons.org/react/61DAFB",
   "Expo Go": "https://cdn.simpleicons.org/expo/FFFFFF",
   "HTML5 Canvas": "https://cdn.simpleicons.org/html5/E34F26",
@@ -24,6 +27,8 @@ const techIcons = {
   Bootstrap: "https://cdn.simpleicons.org/bootstrap/7952B3",
   Cloudinary: "https://cdn.simpleicons.org/cloudinary/3448C5",
   Heroku: herokulogo,
+  NewsAPI: newsapi,
+  "OpenWeather API": openweatherLogo,
   PostgreSQL: "https://cdn.simpleicons.org/postgresql/336791",
 };
 

@@ -26,7 +26,7 @@ export default function FeaturedProject() {
 
         <PixelCard
           className="featured-pixel"
-          colors={["#c3f84a"]}
+          colors={["#c3f84a", "#e8f4fc"]}
           glowColor="#e8f4fc"
           shape="square"
           origin="center"
@@ -35,11 +35,11 @@ export default function FeaturedProject() {
           speed={72}
           revealDuration={600}
           spotlight={1}
-          glow={1}
+          glow={0}
           opacity={0.8}
           fade={0}
           trigger="always"
-          radius={25}
+          radius={30}
           clickPulse
           intro
           theme="dark"

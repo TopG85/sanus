@@ -347,7 +347,33 @@ main.hero {
   display: flex;
   flex-direction: column;
 }
+.projects-grid {
+  align-items: stretch;
+}
 
+.project-glow {
+  height: 100%;
+}
+
+.project-glow > .border-glow-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-pixel {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-pixel > .project-card {
+  flex: 1;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
 /* Individual Project Page */
 .detail-page {
   max-width: 100%;
