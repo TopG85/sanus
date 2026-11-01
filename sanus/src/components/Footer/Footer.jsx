@@ -1,39 +1,55 @@
 import "./Footer.css";
 import { Link } from "react-router-dom";
-function Footer() {
+
+const quickLinks = [
+  { label: "Home", to: "/" },
+  { label: "Website Check-up", to: "/checkup" },
+  { label: "Projects", to: "/projects" },
+  { label: "Pricing", to: "/pricing" },
+  { label: "About", to: "/about" },
+  { label: "Contact", to: "/contact" },
+  { label: "Leave a Review", to: "/reviews" },
+];
+
+export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-section">
-          <h3>Sanus</h3>
+    <footer className="site-footer">
+      <div className="footer-inner">
+        <div className="footer-brand">
+          <h2>SANUS</h2>
+          <p>Healthy, Sane, Sound & Sensible.</p>
+          <p>Websites for churches, charities and organisations.</p>
+        </div>
+
+        <nav className="footer-links" aria-label="Footer quick links">
+          <h3>Quick links</h3>
+          <ul>
+            {quickLinks.map((link) => (
+              <li key={link.to}>
+                <Link to={link.to}>{link.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div className="footer-hours">
+          <h3>Opening hours</h3>
           <p>
-            Professional web design and development for churches, charities and
-            small businesses.
+            Monday to Friday
+            <br />
+            <strong>9:00 am – 5:00 pm</strong>
+          </p>
+          <p>
+            Saturday and Sunday
+            <br />
+            <strong>Closed</strong>
           </p>
         </div>
-         
-        <div className="footer-section">
-          <h3>Quick Links</h3> 
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-          </ul>
-        </div>
-         
-        <div className="footer-section">
-          <h3>Opening Hours</h3> 
-          <ul>
-            <li>Monday - Friday</li>
-            <li>09:00 - 17:00</li>
-            <li>Weekend - Closed</li>
-          </ul>
-        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <p>© 2026 Sanus. All rights reserved.</p>
       </div>
     </footer>
   );
 }
-export default Footer;

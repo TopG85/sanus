@@ -72,7 +72,7 @@
 .gooey-nav__list--active {
   position: absolute;
   inset: 0;
-  color: #c3f84a;
+  color: #152641;
   visibility: hidden;
   clip-path: inset(100%);
   pointer-events: none;
@@ -89,8 +89,8 @@
   padding: var(--gn-y) var(--gn-x);
   border: none;
   border-radius: 999px;
-  background: #3b17ff;
-  color: #c3f84a;
+  background: #c3f84a;
+  color: #152641;
   font: inherit;
   font-weight: 500;
   font-family: "RX100-Regular", sans-serif;
@@ -106,7 +106,7 @@
 }
 
 .gooey-nav__item[data-active] .gooey-nav__link {
-  color: var(--gn-ink);
+  color: #3b17ff;
 }
 
 .gooey-nav__link:focus-visible {
@@ -136,6 +136,6 @@
 /* Framed Variant - Active State */
 @media (hover: hover) {
   .gooey-nav__link:hover {
-    color: #c3f84a;
+    color: #3b17ff;
   }
 }

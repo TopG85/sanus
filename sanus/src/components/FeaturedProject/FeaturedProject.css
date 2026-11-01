@@ -41,7 +41,7 @@
   top: 1rem;
   left: 1rem;
   background: #c3f84a;
-  color: #3b17ff;
+  color: #152641;
   font-family: "RX100-Regulars", sans-serif;
   font-weight: 900;
   font-size: 0.8rem;
@@ -49,7 +49,7 @@
   text-transform: uppercase;
   padding: 0.5rem 0.8rem;
   border-radius: 0.35rem;
-  border: 2px solid #3b17ff;
+  border: 2px solid #152641;
 }
 
 .featured-pixel {
@@ -96,7 +96,7 @@
 }
 
 .featured-link {
-  color: #3b17ff;
+  color: #152641;
   font-weight: 700;
   font-family: "RX100-Regular", sans-serif;
   text-decoration: none;

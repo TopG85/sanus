@@ -26,7 +26,7 @@ export default function FeaturedProject() {
 
         <PixelCard
           className="featured-pixel"
-          colors={["#c3f84a", "#e8f4fc"]}
+          colors={["#c3f84a", "#e8f4fc", "#3b17ff"]}
           glowColor="#e8f4fc"
           shape="square"
           origin="center"

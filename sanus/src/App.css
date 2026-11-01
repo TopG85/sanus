@@ -148,7 +148,7 @@ main.hero {
   font-family: "RX100-Regular", sans-serif;
   display: inline-block;
   background: #c3f84a;
-  color: #3b17ff;
+  color: #152641;
   font-weight: 900;
   font-size: 1.1rem;
   padding: 0.85rem 2.2rem;
@@ -160,7 +160,7 @@ main.hero {
   font-family: "RX100-Regular", sans-serif;
   background: transparent;
   color: #c3f84a;
-  border: 2px solid #3b17ff;
+  border: 2px solid #152641;
 }
 
 /* Media Queries */
@@ -557,4 +557,83 @@ main.hero {
   color: #fbbf24;
   font-size: 0.9rem;
   margin-top: 0.4rem;
+}
+
+/* Footer Styles */
+.site-footer {
+  background: #c3f84a;
+  font-family: "RX100-Regular", sans-serif;
+  margin-top: 4rem;
+  padding: 3.5rem 2rem 0;
+  text-align: left;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.site-footer h2,
+.site-footer h3 {
+  font-family: "Array-BoldWide", Arial, sans-serif;
+  color: #152641;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 1rem;
+  margin: 0 0 1rem;
+}
+
+.footer-brand h2 {
+  font-family: "Array-BoldWide", sans-serif;
+  color: #152641;
+  font-size: 1.75rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.footer-brand p,
+.footer-hours p {
+  color: #152641;
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+  max-width: none;
+}
+
+.footer-hours strong {
+  color: #152641;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  color: #152641;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #3b17ff;
+}
+
+.footer-bottom {
+  max-width: 64rem;
+  margin: 2.5rem auto 0;
+  padding: 1.25rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #152641;
+  font-size: 0.9rem;
+  margin: 0;
+  max-width: none;
 }

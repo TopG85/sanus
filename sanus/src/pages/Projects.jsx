@@ -61,7 +61,7 @@ export default function Projects() {
           >
             <PixelCard
               className="project-pixel"
-              colors={["#e8f4fc", "#c3f84a", "#c3f84a"]}
+              colors={["#e8f4fc", "#c3f84a", "#3b17ff"]}
               glowColor="#e8f4fc"
               shape="square"
               origin="center"

@@ -20,7 +20,6 @@ export default function App() {
         <Route path="/contact" element={<p>Contact coming soon</p>} />
         <Route path="/reviews" element={<p>Leave a review coming soon</p>} />
       </Routes>
-
       <Footer />
     </>
   );
