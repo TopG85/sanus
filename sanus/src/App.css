@@ -93,6 +93,14 @@ main.hero {
   justify-content: center;
   flex-wrap: wrap;
 }
+.hero-actions .star-border {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-actions .star-border__light {
+  z-index: 0;
+}
 .hero-title {
   font-weight: 700;
   color: #c3f84a;
@@ -158,9 +166,15 @@ main.hero {
 
 .btn-outline {
   font-family: "RX100-Regular", sans-serif;
+  display: inline-block;
   background: transparent;
   color: #c3f84a;
-  border: 2px solid #152641;
+  border: #e8f4fc 2px solid;
+  font-weight: 900;
+  font-size: 1.1rem;
+  padding: 0.85rem 2.2rem;
+  border-radius: 0.7rem;
+  text-decoration: none;
 }
 
 /* Media Queries */
@@ -554,7 +568,8 @@ main.hero {
 }
 
 .shot figcaption {
-  color: #fbbf24;
+  color: #e8f4fc;
+  font-family: "RX100-Regular", sans-serif;
   font-size: 0.9rem;
   margin-top: 0.4rem;
 }
@@ -636,4 +651,105 @@ main.hero {
   font-size: 0.9rem;
   margin: 0;
   max-width: none;
+}
+/* About Page */
+.about-page {
+  padding: 8rem 2rem 4rem;
+  max-width: 56rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #152641;
+  color: #e8f4fc;
+  text-align: left;
+  font-family: "RX100-Regular", sans-serif;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-page .about-portrait {
+  width: auto;
+  height: 340px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 24px;
+  border: none;
+  background: none;
+  margin: 0 auto 1.5rem;
+}
+
+.about-page h1 {
+  font-family: "Array-BoldWide", sans-serif;
+  color: #c3f84a;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-page h2 {
+  font-family: "Array-BoldWide", sans-serif;
+  color: #c3f84a;
+  font-size: 1.6rem;
+  margin: 2.5rem 0 1rem;
+}
+
+.about-page h3 {
+  color: #e8f4fc;
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.about-page p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  max-width: none;
+}
+
+.about-page a {
+  color: #c3f84a;
+}
+.about-list {
+  padding-left: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.about-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.about-tech a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #e8f4fc;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.about-tech img {
+  width: 18px;
+  height: 18px;
+}
+
+.about-actions {
+  margin-top: 2.5rem;
+}
+.about-actions a.btn {
+  font-family: "RX100-Regular", sans-serif;
+  display: inline-block;
+  background: #c3f84a;
+  color: #152641;
+  font-weight: 900;
+  font-size: 1.1rem;
+  padding: 0.85rem 2.2rem;
+  border-radius: 0.7rem;
+  text-decoration: none;
 }

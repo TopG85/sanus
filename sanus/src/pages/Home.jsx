@@ -1,5 +1,6 @@
 import Prism from "../components/Prism/Prism";
 import FeaturedProject from "../components/FeaturedProject/FeaturedProject";
+import StarBorder from "../components/StarBorder/StarBorder";
 
 export default function Home() {
   return (
@@ -40,12 +41,44 @@ export default function Home() {
             archaeology.
           </p>
           <div className="hero-actions">
-            <a href="#" className="btn">
-              Website Check-up
-            </a>
-            <a href="#" className="btn btn-outline">
-              Talk to me
-            </a>
+            <StarBorder
+              color="#c3f84a"
+              trailColor="#c3f84a"
+              duration={4.5}
+              stars={1}
+              trailLength={0.8}
+              thickness={3}
+              radius={18}
+              glow={1}
+              hover="brighten"
+              sparkle
+              clickPulse
+              theme="dark"
+            >
+              <a href="/checkup" className="btn">
+                Website Check-up
+              </a>
+            </StarBorder>
+
+            <StarBorder
+              color="#e8f4fc"
+              trailColor="#e8f4fc"
+              duration={4.5}
+              direction="clockwise"
+              stars={1}
+              trailLength={0.8}
+              thickness={3}
+              radius={18}
+              glow={1}
+              hover="lap"
+              sparkle
+              clickPulse
+              theme="dark"
+            >
+              <a href="/contact" className="btn btn-outline">
+                Talk to me
+              </a>
+            </StarBorder>
           </div>
         </div>
       </main>

@@ -31,10 +31,7 @@
 .gooey-nav--framed {
   padding: var(--gn-pad);
   border-radius: 999px;
-  background: #1;
-  box-shadow: var(--gn-frame-shadow);
-  -webkit-backdrop-filter: blur(20px) saturate(1.6);
-  backdrop-filter: blur(20px) saturate(1.6);
+  background: #152641;
 }
 /* Framed Variant - Active State */
 .gooey-nav__stage {

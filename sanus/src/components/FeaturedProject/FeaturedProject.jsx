@@ -3,6 +3,7 @@ import BorderGlow from "../BorderGlow/BorderGlow";
 import PixelCard from "../PixelCard/PixelCard";
 import vinelifeShot from "../../assets/vinelifescreenshot.webp";
 import "./FeaturedProject.css";
+import StarBorder from "../StarBorder/StarBorder";
 
 export default function FeaturedProject() {
   return (
@@ -51,9 +52,26 @@ export default function FeaturedProject() {
               A live client website with a custom Wagtail CMS, giving the church
               full content control after handover.
             </p>
-            <Link to="/projects/vinelife" className="btn">
+            <StarBorder
+              as={Link}
+              to="/projects/vinelife"
+              className="btn"
+              color="#c3f84a"
+              trailColor="#c3f84a"
+              duration={4.5}
+              direction="clockwise"
+              stars={1}
+              trailLength={0.8}
+              thickness={3}
+              radius={18}
+              glow={1}
+              hover="brighten"
+              sparkle
+              clickPulse
+              theme="dark"
+            >
               Read the write-up
-            </Link>
+            </StarBorder>
           </div>
         </PixelCard>
       </div>

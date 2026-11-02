@@ -3,6 +3,7 @@ import { projects } from "../data/projects";
 import herokulogo from "../assets/Heroku-Logo-Mark-Light-RGB.webp";
 import newsapi from "../assets/NewsAPI-logo.webp";
 import openweatherLogo from "../assets/OpenWeather-Master-Logo RGB.webp";
+import StarBorder from "../components/StarBorder/StarBorder";
 
 const typeLabels = {
   client: "Client project",
@@ -192,22 +193,49 @@ export default function ProjectPage() {
       )}
 
       <div className="detail-links">
-        <a
+        <StarBorder
+          as="a"
           href={project.live}
           target="_blank"
           rel="noopener noreferrer"
           className="btn"
+          color="#c3f84a"
+          trailColor="#c3f84a"
+          duration={4.5}
+          stars={1}
+          trailLength={0.8}
+          thickness={3}
+          radius={18}
+          glow={1}
+          hover="brighten"
+          sparkle
+          clickPulse
+          theme="dark"
         >
           Live site
-        </a>
-        <a
+        </StarBorder>
+
+        <StarBorder
+          as="a"
           href={project.code}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-outline"
+          className="btn-outline"
+          color="#e8f4fc"
+          trailColor="#e8f4fc"
+          duration={4.5}
+          stars={1}
+          trailLength={0.8}
+          thickness={3}
+          radius={18}
+          glow={1}
+          hover="brighten"
+          sparkle
+          clickPulse
+          theme="dark"
         >
           Code
-        </a>
+        </StarBorder>
       </div>
     </section>
   );

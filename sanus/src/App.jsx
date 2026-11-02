@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import ProjectPage from "./pages/ProjectPage";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
+import About from "./pages/About";
 
 export default function App() {
   return (
@@ -16,7 +17,7 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:slug" element={<ProjectPage />} />
         <Route path="/pricing" element={<p>Pricing coming soon</p>} />
-        <Route path="/about" element={<p>About coming soon</p>} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<p>Contact coming soon</p>} />
         <Route path="/reviews" element={<p>Leave a review coming soon</p>} />
       </Routes>

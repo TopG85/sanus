@@ -34,7 +34,7 @@
   border-radius: 19px;
   color: #c3f84a;
   background: transparent;
-  overflow:;
+  overflow: hidden;
 }
 .featured-badge {
   position: absolute;
@@ -88,7 +88,19 @@
   color: #e8f4fc;
   margin-bottom: 1.5rem;
 }
-
+.featured .star-border {
+  position: relative;
+  z-index: 3;
+}
+.featured-body .star-border.btn {
+  padding: 0.85rem 2.2rem;
+  background: #c3f84a;
+  color: #152641;
+  font-weight: 900;
+  font-size: 1.1rem;
+  border-radius: 0.7rem;
+  align-self: flex-start;
+}
 .featured-footer {
   padding: 1rem 2rem;
   text-align: right;
