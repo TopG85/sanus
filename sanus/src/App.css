@@ -151,7 +151,7 @@ main.hero {
   margin: 0;
 }
 
-/* Buttons */
+/* Buttons for Hero Section */
 .btn {
   font-family: "RX100-Regular", sans-serif;
   display: inline-block;
@@ -160,7 +160,7 @@ main.hero {
   font-weight: 900;
   font-size: 1.1rem;
   padding: 0.85rem 2.2rem;
-  border-radius: 0.7rem;
+  border-radius: 18px;
   text-decoration: none;
 }
 
@@ -173,7 +173,7 @@ main.hero {
   font-weight: 900;
   font-size: 1.1rem;
   padding: 0.85rem 2.2rem;
-  border-radius: 0.7rem;
+  border-radius: 18px;
   text-decoration: none;
 }
 
@@ -750,6 +750,76 @@ main.hero {
   font-weight: 900;
   font-size: 1.1rem;
   padding: 0.85rem 2.2rem;
-  border-radius: 0.7rem;
+  border-radius: 18;
   text-decoration: none;
+}
+/* Contact Page */
+.contact-status {
+  color: #c3f84a;
+  font-family: Array-BoldWide, sans-serif;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.contact-status--error {
+  color: #f97316;
+}
+.contact-page {
+  padding: 8rem 2rem 4rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #152641;
+  color: #e8f4fc;
+  text-align: left;
+  font-family: "RX100-Regular", sans-serif;
+}
+
+.contact-title {
+  font-family: "Array-BoldWide", sans-serif;
+  color: #c3f84a;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-intro {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: none;
+}
+
+.contact-page a {
+  color: #c3f84a;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font: inherit;
+  color: #152641;
+  background: #e8f4fc;
+  border: 2px solid #c3f84a;
+  border-radius: 0.5rem;
+  padding: 0.75rem 0.9rem;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .btn {
+  justify-self: start;
+  cursor: pointer;
 }
