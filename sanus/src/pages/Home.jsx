@@ -13,11 +13,11 @@ export default function Home() {
             height={3.5}
             baseWidth={5.5}
             scale={4.6}
-            hueShift={2}
-            colorFrequency={2}
-            glow={1.5}
-            colors={["#152641", "#3b17ff", "#c3f84a"]}
-            saturation={2.3}
+            hueShift={0.9}
+            colorFrequency={1}
+            glow={0.9}
+            colors={["#152641", "#3b17ff", "#e8f4fc", "#c3f84a"]}
+            saturation={2}
             noise={0}
             interactive
             hoverStrength={2}
@@ -29,19 +29,17 @@ export default function Home() {
         </div>
 
         <div className="hero-content">
-          <p className="hero-kicker">
-            Websites for organisations with better things to do.
-          </p>
+          <p className="hero-kicker">Web design for churches and charities</p>
           <h1 className="hero-title">
-            WEBSITE THAT GET YOU FOUND AND TRUSTED.
+            Websites that bring people through the door.
           </h1>
           <p className="hero-lead">
-            I design and build websites for churches, charities and
-            organisations. No jargon, no mystery buttons and no website
-            archaeology.
+            Clear, welcoming sites for churches, charities and organisations,
+            built to be found and easy to use.
           </p>
           <div className="hero-actions">
             <StarBorder
+              className="btn"
               color="#c3f84a"
               trailColor="#c3f84a"
               duration={4.5}
@@ -55,64 +53,36 @@ export default function Home() {
               clickPulse
               theme="dark"
             >
-              <a href="/checkup" className="btn">
-                Website Check-up
-              </a>
+              Website Check-up
             </StarBorder>
-
             <StarBorder
+              className="btn btn-outline"
               color="#e8f4fc"
               trailColor="#e8f4fc"
               duration={4.5}
-              direction="clockwise"
               stars={1}
               trailLength={0.8}
               thickness={3}
               radius={18}
               glow={1}
-              hover="lap"
+              hover="brighten"
               sparkle
               clickPulse
               theme="dark"
             >
-              <a href="/contact" className="btn btn-outline">
-                Talk to me
-              </a>
+              Talk to me
             </StarBorder>
           </div>
+          <p className="hero-price">
+            Websites from £295. Clear, fixed-scope options for churches and
+            charities.
+          </p>
+        </div>
+
+        <div className="hero-feature">
+          <FeaturedProject />
         </div>
       </main>
-
-      <section className="how-section">
-        <h2 className="how-title">How I help</h2>
-        <div className="how-grid">
-          <div className="how-card">
-            <h3>Design</h3>
-            <p>
-              Clear, mobile-friendly layouts shaped around what your visitors
-              actually need to find.
-            </p>
-          </div>
-          <div className="how-card">
-            <h3>Build</h3>
-            <p>
-              Fast, reliable websites built properly, from small landing pages
-              to full sites with a CMS.
-            </p>
-          </div>
-          <div className="how-card">
-            <h3>Handover</h3>
-            <p>
-              You get a site you can edit yourself, so you stay in control after
-              launch.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="featured-section">
-        <FeaturedProject />
-      </section>
     </>
   );
 }

@@ -46,7 +46,7 @@ export default function FeaturedProject() {
           theme="dark"
         >
           <div className="featured-body">
-            <p className="featured-label">Featured client project</p>
+            <h3 className="featured-label">Featured client project</h3>
             <h2>Vinelife Church Wilmslow</h2>
             <p className="featured-text">
               A live client website with a custom Wagtail CMS, giving the church
