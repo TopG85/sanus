@@ -205,7 +205,7 @@ export default function ProjectPage() {
           stars={1}
           trailLength={0.8}
           thickness={3}
-          radius={18}
+          radius={28}
           glow={1}
           hover="brighten"
           sparkle
@@ -221,13 +221,13 @@ export default function ProjectPage() {
           target="_blank"
           rel="noopener noreferrer"
           className="btn-outline"
-          color="#e8f4fc"
-          trailColor="#e8f4fc"
+          color="#3b17ff"
+          trailColor="#3b17ff"
           duration={4.5}
           stars={1}
           trailLength={0.8}
           thickness={3}
-          radius={18}
+          radius={28}
           glow={1}
           hover="brighten"
           sparkle

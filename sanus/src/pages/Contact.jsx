@@ -97,7 +97,7 @@ export default function Contact() {
           stars={1}
           trailLength={0.8}
           thickness={3}
-          radius={18}
+          radius={28}
           glow={1}
           hover="brighten"
           sparkle

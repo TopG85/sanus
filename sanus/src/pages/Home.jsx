@@ -13,11 +13,11 @@ export default function Home() {
             height={3.5}
             baseWidth={5.5}
             scale={4.6}
-            hueShift={0.9}
-            colorFrequency={1}
+            hueShift={1.5}
+            colorFrequency={1.5}
             glow={0.9}
             colors={["#152641", "#3b17ff", "#e8f4fc", "#c3f84a"]}
-            saturation={2}
+            saturation={1.5}
             noise={0}
             interactive
             hoverStrength={2}
@@ -43,10 +43,10 @@ export default function Home() {
               color="#c3f84a"
               trailColor="#c3f84a"
               duration={4.5}
-              stars={1}
+              stars={2}
               trailLength={0.8}
               thickness={3}
-              radius={18}
+              radius={28}
               glow={1}
               hover="brighten"
               sparkle
@@ -57,13 +57,13 @@ export default function Home() {
             </StarBorder>
             <StarBorder
               className="btn btn-outline"
-              color="#e8f4fc"
-              trailColor="#e8f4fc"
+              color="#3b17ff"
+              trailColor="#3b17ff"
               duration={4.5}
-              stars={1}
-              trailLength={0.8}
+              stars={2}
+              trailLength={1.2}
               thickness={3}
-              radius={18}
+              radius={28}
               glow={1}
               hover="brighten"
               sparkle

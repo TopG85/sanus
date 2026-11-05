@@ -200,7 +200,7 @@ p {
   font-weight: 900;
   font-size: 1.1rem;
   padding: 0.85rem 2.2rem;
-  border-radius: 18px;
+  border-radius: 28px;
   text-decoration: none;
 }
 
@@ -208,12 +208,12 @@ p {
   font-family: "RX100-Regular", sans-serif;
   display: inline-block;
   background: transparent;
-  color: #c3f84a;
-  border: #e8f4fc 2px solid;
+  color: #e8f4fc;
+  border: 2px solid #3b17ff;
   font-weight: 900;
   font-size: 1.1rem;
   padding: 0.85rem 2.2rem;
-  border-radius: 18px;
+  border-radius: 28px;
   text-decoration: none;
 }
 

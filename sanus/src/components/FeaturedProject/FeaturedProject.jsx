@@ -28,15 +28,15 @@ export default function FeaturedProject() {
         <PixelCard
           className="featured-pixel"
           colors={["#c3f84a", "#e8f4fc", "#3b17ff"]}
-          glowColor="#e8f4fc"
-          shape="square"
+          glowColor="#3b17ff"
+          shape="circle"
           origin="center"
           gap={15}
-          pixelSize={5}
+          pixelSize={6}
           speed={72}
           revealDuration={600}
           spotlight={1}
-          glow={0}
+          glow={0.9}
           opacity={0.8}
           fade={0}
           trigger="always"
@@ -63,7 +63,7 @@ export default function FeaturedProject() {
               stars={1}
               trailLength={0.8}
               thickness={3}
-              radius={18}
+              radius={28}
               glow={1}
               hover="brighten"
               sparkle

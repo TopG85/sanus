@@ -62,7 +62,7 @@ export default function Projects() {
             <PixelCard
               className="project-pixel"
               colors={["#e8f4fc", "#c3f84a", "#3b17ff"]}
-              glowColor="#e8f4fc"
+              glowColor="#3b17ff"
               shape="square"
               origin="center"
               gap={15}
@@ -70,7 +70,7 @@ export default function Projects() {
               speed={72}
               revealDuration={600}
               spotlight={1}
-              glow={0}
+              glow={0.9}
               opacity={0.8}
               fade={0}
               trigger="always"
