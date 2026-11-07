@@ -7,6 +7,7 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import LeaveReview from "./pages/LeaveReview";
 
 export default function App() {
   return (
@@ -20,7 +21,7 @@ export default function App() {
         <Route path="/pricing" element={<p>Pricing coming soon</p>} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/reviews" element={<p>Leave a review coming soon</p>} />
+        <Route path="/reviews" element={<LeaveReview />} />
       </Routes>
       <Footer />
     </>

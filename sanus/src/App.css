@@ -887,3 +887,12 @@ p {
   justify-self: start;
   cursor: pointer;
 }
+/* Review Page */
+.review-rating {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.review-label {
+  font-weight: 600;
+}
