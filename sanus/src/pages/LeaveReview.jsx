@@ -82,7 +82,7 @@ export default function LeaveReview() {
             shape="star"
             labels={["Poor", "Fair", "Good", "Great", "Superb"]}
             activeColor="#c3f84a"
-            idleColor="#e8f4fc"
+            idleColor="#3b17ff"
             tipColor="#3b17ff"
             tipTextColor="#f5f5f5"
             size={40}
@@ -145,7 +145,7 @@ export default function LeaveReview() {
           className="btn"
           color="#c3f84a"
           trailColor="#c3f84a"
-          duration={4.5}
+          duration={10}
           stars={1}
           trailLength={0.8}
           thickness={3}

@@ -953,11 +953,11 @@ p {
 }
 
 .review-card figcaption strong {
-  color: #c3f84a;
+  color: #e8f4fc;
 }
 
 .review-card figcaption span {
-  color: #00e5ff;
+  color: #c3f84a;
   font-size: 1rem;
 }
 .review-pixel {
