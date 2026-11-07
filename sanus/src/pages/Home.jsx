@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import Prism from "../components/Prism/Prism";
 import FeaturedProject from "../components/FeaturedProject/FeaturedProject";
 import StarBorder from "../components/StarBorder/StarBorder";
+import ClientReviews from "../components/ClientReviews/ClientReviews";
 
 export default function Home() {
   return (
@@ -59,7 +61,7 @@ export default function Home() {
               className="btn btn-outline"
               color="#c3f84a"
               trailColor="#c3f84a"
-              duration={8}
+              duration={10}
               stars={1}
               trailLength={1.2}
               thickness={2}
@@ -82,6 +84,8 @@ export default function Home() {
         <div className="hero-feature">
           <FeaturedProject />
         </div>
+
+        <ClientReviews />
       </main>
     </>
   );

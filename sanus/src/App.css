@@ -896,3 +896,101 @@ p {
 .review-label {
   font-weight: 600;
 }
+/* Client Reviews Section */
+.reviews-section {
+  padding: 4rem 2rem 2rem;
+  text-align: center;
+  background: none;
+}
+.reviews-section h2 {
+  font-family: "Array-BoldWide", sans-serif;
+  color: #c3f84a;
+}
+.reviews-section > .reviews-title,
+.reviews-section > .reviews-grid {
+  position: relative;
+  z-index: 1;
+}
+
+.reviews-section .reviews-title {
+  color: #c3f84a;
+}
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.review-card {
+  border: 1px solid #c3f84a;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  margin: 0;
+}
+
+.review-stars {
+  color: #c3f84a;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.review-card blockquote {
+  color: #e8f4fc;
+  font-family: "RX100-Regular", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.review-card figcaption {
+  display: grid;
+  gap: 0.25rem;
+  color: #e8f4fc;
+  font-family: "RX100-Regular", sans-serif;
+}
+
+.review-card figcaption strong {
+  color: #c3f84a;
+}
+
+.review-card figcaption span {
+  color: #00e5ff;
+  font-size: 1rem;
+}
+.review-pixel {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-pixel > .review-card {
+  flex: 1;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 1.5rem;
+}
+.reviews-section {
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 5rem 2rem 2rem;
+}
+
+.reviews-grid {
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.review-card {
+  padding: 2rem;
+  font-size: 1.05rem;
+}
+
+.reviews-title {
+  margin-bottom: 2.5rem;
+}
