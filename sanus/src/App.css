@@ -994,3 +994,122 @@ p {
 .reviews-title {
   margin-bottom: 2.5rem;
 }
+/* Pricing page */
+.pricing-page {
+  padding: 8rem 2rem 4rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #152641;
+  color: #e8f4fc;
+  text-align: left;
+  font-family: "RX100-Regular", sans-serif;
+}
+
+.pricing-page p {
+  max-width: none;
+}
+
+.pricing-title {
+  font-family: "Array-BoldWide", sans-serif;
+  color: #c3f84a;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-intro {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+/* Glowing plan cards */
+.plan-glow {
+  margin-bottom: 2.5rem;
+}
+
+.plan-glow .border-glow-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-pixel {
+  width: 100%;
+}
+
+.plan-pixel .plan-card {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 2.25rem;
+}
+
+.plan-name {
+  font-family: "Array-BoldWide", sans-serif;
+  color: #c3f84a;
+  font-size: 1.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.plan-summary {
+  margin-bottom: 1.5rem;
+}
+
+.plan-option {
+  margin-bottom: 1.5rem;
+}
+
+.plan-option:last-child {
+  margin-bottom: 0;
+}
+
+.plan-option-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.plan-option-head h3 {
+  font-family: "Array-BoldWide", sans-serif;
+  color: #c3f84a;
+  font-size: 1.1rem;
+}
+
+.plan-option-head strong {
+  color: #c3f84a;
+  font-size: 1.1rem;
+}
+
+.plan-option ul {
+  padding-left: 1.25rem;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.plan-pixel .plan-card {
+  border: 1px solid #c3f84a;
+  border-radius: 20px;
+}
+/* Note and buttons */
+.pricing-note {
+  border-left: 4px solid #c3f84a;
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.pricing-note h2 {
+  font-family: "Array-BoldWide", sans-serif;
+  color: #c3f84a;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 3rem;
+}
