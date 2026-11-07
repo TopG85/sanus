@@ -63,16 +63,16 @@ export default function Projects() {
               className="project-pixel"
               colors={["#e8f4fc", "#c3f84a", "#3b17ff"]}
               glowColor="#3b17ff"
-              shape="square"
+              shape="circle"
               origin="center"
-              gap={15}
-              pixelSize={5}
-              speed={72}
+              gap={17}
+              pixelSize={10}
+              speed={55}
               revealDuration={600}
               spotlight={1}
               glow={0.9}
               opacity={0.8}
-              fade={0}
+              fade={1}
               trigger="always"
               radius={30}
               clickPulse

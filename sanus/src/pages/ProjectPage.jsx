@@ -201,9 +201,9 @@ export default function ProjectPage() {
           className="btn"
           color="#c3f84a"
           trailColor="#c3f84a"
-          duration={4.5}
+          duration={8}
           stars={1}
-          trailLength={0.8}
+          trailLength={1.2}
           thickness={3}
           radius={28}
           glow={1}
@@ -221,11 +221,11 @@ export default function ProjectPage() {
           target="_blank"
           rel="noopener noreferrer"
           className="btn-outline"
-          color="#3b17ff"
-          trailColor="#3b17ff"
-          duration={4.5}
+          color="#c3f84a"
+          trailColor="#c3f84a"
+          duration={8}
           stars={1}
-          trailLength={0.8}
+          trailLength={1.2}
           thickness={3}
           radius={28}
           glow={1}

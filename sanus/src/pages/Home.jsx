@@ -42,10 +42,10 @@ export default function Home() {
               className="btn"
               color="#c3f84a"
               trailColor="#c3f84a"
-              duration={4.5}
-              stars={2}
-              trailLength={0.8}
-              thickness={3}
+              duration={10}
+              stars={1}
+              trailLength={1.2}
+              thickness={2}
               radius={28}
               glow={1}
               hover="brighten"
@@ -57,14 +57,14 @@ export default function Home() {
             </StarBorder>
             <StarBorder
               className="btn btn-outline"
-              color="#3b17ff"
-              trailColor="#3b17ff"
-              duration={4.5}
-              stars={2}
+              color="#c3f84a"
+              trailColor="#c3f84a"
+              duration={8}
+              stars={1}
               trailLength={1.2}
-              thickness={3}
+              thickness={2}
               radius={28}
-              glow={1}
+              glow={2}
               hover="brighten"
               sparkle
               clickPulse

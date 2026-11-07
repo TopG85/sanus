@@ -27,20 +27,20 @@ export default function FeaturedProject() {
 
         <PixelCard
           className="featured-pixel"
-          colors={["#c3f84a", "#e8f4fc", "#3b17ff"]}
+          colors={["#e8f4fc", "#c3f84a", "#3b17ff"]}
           glowColor="#3b17ff"
           shape="circle"
           origin="center"
-          gap={15}
-          pixelSize={6}
-          speed={72}
+          gap={17}
+          pixelSize={10}
+          speed={55}
           revealDuration={600}
           spotlight={1}
           glow={0.9}
           opacity={0.8}
-          fade={0}
+          fade={1}
           trigger="always"
-          radius={30}
+          radius={28}
           clickPulse
           intro
           theme="dark"
@@ -58,11 +58,11 @@ export default function FeaturedProject() {
               className="btn"
               color="#c3f84a"
               trailColor="#c3f84a"
-              duration={4.5}
+              duration={10}
               direction="clockwise"
               stars={1}
-              trailLength={0.8}
-              thickness={3}
+              trailLength={1.2}
+              thickness={2}
               radius={28}
               glow={1}
               hover="brighten"

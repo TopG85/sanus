@@ -129,7 +129,7 @@ p {
 
 .hero-price {
   margin: 1.5rem auto 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #e8f4fc;
   font-family: "RX100-Regular", sans-serif;
   text-align: center;
@@ -209,7 +209,7 @@ p {
   display: inline-block;
   background: transparent;
   color: #e8f4fc;
-  border: 2px solid #3b17ff;
+  border: 2px solid #c3f84a;
   font-weight: 900;
   font-size: 1.1rem;
   padding: 0.85rem 2.2rem;

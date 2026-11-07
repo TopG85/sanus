@@ -197,10 +197,10 @@ export default function About() {
           className="btn"
           color="#c3f84a"
           trailColor="#c3f84a"
-          duration={4.5}
+          duration={10}
           stars={1}
-          trailLength={0.8}
-          thickness={3}
+          trailLength={1.2}
+          thickness={2}
           radius={28}
           glow={1}
           hover="brighten"
