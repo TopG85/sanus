@@ -1022,6 +1022,24 @@ p {
   line-height: 1.7;
   margin-bottom: 3rem;
 }
+.pricing-why ul {
+  padding-left: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.pricing-why h3 {
+  margin-top: 1.5rem;
+}
+
+.pricing-why h4 {
+  font-family: "Array-BoldWide", sans-serif;
+  color: #c3f84a;
+  font-size: 1rem;
+  margin: 1rem 0 0.25rem;
+}
+.pricing-why + .plan-glow {
+  margin-top: 4rem;
+}
 
 /* Glowing plan cards */
 .plan-glow {

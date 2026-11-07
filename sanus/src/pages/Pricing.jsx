@@ -112,6 +112,80 @@ export default function Pricing() {
         and goals.
       </p>
 
+      <div className="pricing-note pricing-why">
+        <h2>Why a website takes time and costs what it does</h2>
+        <p>
+          Most websites start with a problem: visitors can't find what they
+          need, the information is out of date, or the site doesn't work well on
+          a phone. Fixing it means working out what's wrong first, then building
+          a solution that works for your organisation and your visitors.
+        </p>
+
+        <h3>Why it takes time</h3>
+        <h4>Understanding the problem</h4>
+        <p>
+          Before any design starts, I look at what your visitors need to do,
+          what's working now and what isn't. Getting this right at the start
+          prevents costly changes later.
+        </p>
+        <h4>Planning the structure and content</h4>
+        <p>
+          Each page needs a clear purpose and a logical place in the site.
+          Planning how the pages connect is what makes a site easy to use, and
+          it's much quicker to change a plan than a finished site.
+        </p>
+        <h4>Designing for every screen</h4>
+        <p>
+          Many visitors arrive on a phone, so layouts are designed and checked
+          for phones, tablets and desktops, not just one screen size.
+        </p>
+        <h4>Building and testing</h4>
+        <p>
+          The site is built, then tested for speed, accessibility and how it
+          behaves across different browsers and devices. Accessible sites work
+          for people using screen readers, keyboards or larger text, and that
+          takes deliberate checking.
+        </p>
+        <h4>Feedback and revisions</h4>
+        <p>
+          You review the site at each stage, and I make the changes you ask for.
+          Each round of feedback adds time, but it's how the finished site ends
+          up right for you.
+        </p>
+        <h4>Launch and handover</h4>
+        <p>
+          Setting up the domain, hosting and any content management system takes
+          time, and so does showing you how to update your own pages.
+        </p>
+
+        <h3>Why it costs what it does</h3>
+        <p>
+          The price reflects the hours of skilled work each stage needs, plus
+          the tools and services the site runs on. These are the main factors:
+        </p>
+        <ul>
+          <li>The number of pages and how much new content each one needs</li>
+          <li>Any features, such as calendars, forms, accounts or live data</li>
+          <li>
+            Whether you need a content management system so you can edit pages
+            yourself
+          </li>
+          <li>
+            How much of the content, photography and copy is ready at the start
+          </li>
+          <li>How many rounds of feedback and revisions the project needs</li>
+        </ul>
+
+        <h3>How long it takes</h3>
+        <p>
+          Smaller projects, such as a landing page or a few pages, can take a
+          few weeks. Larger projects with more pages and features often take a
+          few months. The biggest cause of delay is usually waiting for text,
+          photos and feedback, so we agree a schedule at the start and keep it
+          visible throughout.
+        </p>
+      </div>
+
       {plans.map((plan) => (
         <BorderGlow
           key={plan.name}
