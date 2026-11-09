@@ -33,7 +33,7 @@ export default function Home() {
           flakeSize={1.2}
           pixelSize={3}
           glow={1.65}
-          mouseInteraction
+          mouseInteraction={false}
           sway={0.5}
           twinkle={1}
           accumulate
