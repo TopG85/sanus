@@ -65,7 +65,7 @@ export default function Home() {
             deleteMode="backspace"
             typeEffect="rise"
             mistakes={0}
-            cursorStyle="underscore"
+            cursorStyle="bar"
             cursorGlide
             showCursor
             cursorColor="#e8f4fc"
