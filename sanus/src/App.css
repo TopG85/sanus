@@ -58,12 +58,13 @@ p {
   text-align: center;
   overflow: hidden;
   isolation: isolate;
-  background-color: #0b0f2e;
+  background-color: #152641;
 }
 
+/* Hero background layer (Pixel Snow) */
 .hero-bg,
-.hero-bg .prism,
-.hero-bg .prism-canvas {
+.hero-bg .pixel-snow-container,
+.hero-bg .pixel-snow-canvas {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -176,6 +177,8 @@ p {
   top: 0.75rem;
   left: 0.75rem;
 }
+
+/* 8 Pixel Snow Effect */
 
 @media (max-width: 768px) {
   .hero-title {
