@@ -52,25 +52,27 @@ export default function Home() {
           <TextType
             as="span"
             text={[
+              "Have you done the website check-up yet?",
               "Websites that bring people through the door",
               "Websites that get you found",
               "Websites that build trust",
-              "No websites were harmed in the making of this website",
+              "Websites that work",
+              "No websites were harmed in the making of this one",
             ]}
-            typingSpeed={40}
+            typingSpeed={155}
             pauseDuration={1800}
-            deletingSpeed={40}
-            deleteMode="select"
-            typeEffect="blur"
+            deletingSpeed={80}
+            deleteMode="backspace"
+            typeEffect="rise"
             mistakes={0}
             cursorStyle="underscore"
             cursorGlide
             showCursor
-            cursorColor="#c3f84a"
+            cursorColor="#e8f4fc"
             prefixColor="#e8f4fc"
             cursorBlinkDuration={0.5}
             cursorCharacter="_"
-            prefix=" "
+            prefix=""
             variableSpeed={{ min: 15, max: 300 }}
           />
         </h1>
