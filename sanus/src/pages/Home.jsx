@@ -4,6 +4,7 @@ import PixelSnow from "../components/PixelSnow/PixelSnow";
 import FeaturedProject from "../components/FeaturedProject/FeaturedProject";
 import StarBorder from "../components/StarBorder/StarBorder";
 import ClientReviews from "../components/ClientReviews/ClientReviews";
+import TextType from "../components/TextType/TextType";
 
 const SCORE_SCRIPT =
   "https://static.scoreapp.com/js/integration/v1/embedding.js?v=3jigi8";
@@ -48,7 +49,30 @@ export default function Home() {
       <div className="hero-content">
         <p className="hero-kicker">Web design for churches and charities</p>
         <h1 className="hero-title">
-          Websites that bring people through the door.
+          <TextType
+            as="span"
+            text={[
+              "Websites that bring people through the door",
+              "Websites that get you found",
+              "Websites that build trust",
+              "No websites were harmed in the making of this website",
+            ]}
+            typingSpeed={40}
+            pauseDuration={1800}
+            deletingSpeed={40}
+            deleteMode="select"
+            typeEffect="blur"
+            mistakes={0}
+            cursorStyle="underscore"
+            cursorGlide
+            showCursor
+            cursorColor="#c3f84a"
+            prefixColor="#e8f4fc"
+            cursorBlinkDuration={0.5}
+            cursorCharacter="_"
+            prefix=" "
+            variableSpeed={{ min: 15, max: 300 }}
+          />
         </h1>
         <p className="hero-lead">
           Clear, welcoming sites for churches, charities and organisations,
