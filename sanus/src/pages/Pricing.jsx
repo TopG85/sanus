@@ -117,8 +117,9 @@ export default function Pricing() {
         <p>
           Most websites start with a problem: visitors can't find what they
           need, the information is out of date, or the site doesn't work well on
-          a phone. Fixing it means working out what's wrong first, then building
-          a solution that works for your organisation and your visitors.
+          a mobile device. Fixing it means working out what's wrong first, then
+          building a solution that works for your organisation and your
+          visitors.
         </p>
 
         <h3>Why it takes time</h3>
@@ -276,8 +277,8 @@ export default function Pricing() {
           as={Link}
           to="/contact"
           className="btn btn-outline"
-          color="#c3f84a"
-          trailColor="#c3f84a"
+          color="#3b17ff"
+          trailColor="#3b17ff"
           duration={10}
           stars={1}
           trailLength={0.8}

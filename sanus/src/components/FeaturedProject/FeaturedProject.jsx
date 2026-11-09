@@ -56,8 +56,8 @@ export default function FeaturedProject() {
               as={Link}
               to="/projects/vinelife"
               className="btn"
-              color="#c3f84a"
-              trailColor="#c3f84a"
+              color="#3b17ff"
+              trailColor="#3b17ff"
               duration={10}
               direction="clockwise"
               stars={1}
