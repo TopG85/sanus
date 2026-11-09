@@ -104,11 +104,11 @@
 .featured-footer {
   padding: 1rem 2rem;
   text-align: right;
-  background: #e8f4fc;
+  background: #3b17ff;
 }
 
 .featured-link {
-  color: #152641;
+  color: #e8f4fc;
   font-weight: 700;
   font-family: "RX100-Regular", sans-serif;
   text-decoration: none;

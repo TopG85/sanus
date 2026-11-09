@@ -1,10 +1,25 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Prism from "../components/Prism/Prism";
 import FeaturedProject from "../components/FeaturedProject/FeaturedProject";
 import StarBorder from "../components/StarBorder/StarBorder";
 import ClientReviews from "../components/ClientReviews/ClientReviews";
 
+const SCORE_SCRIPT =
+  "https://static.scoreapp.com/js/integration/v1/embedding.js?v=3jigi8";
+
 export default function Home() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = SCORE_SCRIPT;
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      script.remove();
+    };
+  }, []);
+
   return (
     <>
       <main className="hero">
@@ -41,7 +56,12 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <StarBorder
+              as="button"
+              type="button"
               className="btn"
+              data-sa-url="https://d43d00e3-32ce-472a-b9be-2a692fd6317f.scoreapp.com/?sa_hide_header=1&sa_hide_footer=1"
+              data-sa-view="popup"
+              data-sa-size="full"
               color="#c3f84a"
               trailColor="#c3f84a"
               duration={10}
@@ -59,14 +79,14 @@ export default function Home() {
             </StarBorder>
             <StarBorder
               className="btn btn-outline"
-              color="#c3f84a"
-              trailColor="#c3f84a"
+              color="#3b17ff"
+              trailColor="#3b17ff"
               duration={10}
               stars={1}
               trailLength={1.2}
-              thickness={2}
+              thickness={3}
               radius={28}
-              glow={2}
+              glow={1}
               hover="brighten"
               sparkle
               clickPulse

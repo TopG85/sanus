@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import LeaveReview from "./pages/LeaveReview";
 import Pricing from "./pages/Pricing";
+import WebsiteCheckup from "./pages/WebsiteCheckup";
 
 export default function App() {
   return (
@@ -16,7 +17,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/checkup" element={<p>Website Check-up coming soon</p>} />
+        <Route path="/checkup" element={<WebsiteCheckup />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:slug" element={<ProjectPage />} />
         <Route path="/pricing" element={<Pricing />} />

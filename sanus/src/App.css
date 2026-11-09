@@ -207,9 +207,8 @@ p {
 .btn-outline {
   font-family: "RX100-Regular", sans-serif;
   display: inline-block;
-  background: transparent;
+  background: #3b17ff;
   color: #e8f4fc;
-  border: 2px solid #c3f84a;
   font-weight: 900;
   font-size: 1.1rem;
   padding: 0.85rem 2.2rem;
@@ -1130,4 +1129,23 @@ p {
   gap: 1rem;
   align-items: center;
   margin-top: 3rem;
+}
+/* ScorApp integration */
+.scoreapp-btn {
+  box-sizing: border-box;
+  min-width: 10rem;
+  padding: 0.75rem 2rem;
+  background-color: #c3f84a;
+  color: #152641;
+  font-family: "RX100-Regular", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+  line-height: 1.5;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  text-align: center;
+  margin: 1rem 0 0;
+  outline: 0;
+  user-select: none;
 }
