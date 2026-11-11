@@ -11,14 +11,12 @@ const SCORE_SCRIPT =
 
 export default function Home() {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = SCORE_SCRIPT;
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      script.remove();
-    };
+    if (!document.querySelector(`script[src="${SCORE_SCRIPT}"]`)) {
+      const script = document.createElement("script");
+      script.src = SCORE_SCRIPT;
+      script.async = true;
+      document.body.appendChild(script);
+    }
   }, []);
 
   return (
