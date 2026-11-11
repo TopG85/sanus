@@ -58,13 +58,13 @@ export default function FeaturedProject() {
               className="btn"
               color="#3b17ff"
               trailColor="#3b17ff"
-              duration={10}
+              duration={6}
               direction="clockwise"
               stars={1}
-              trailLength={1.2}
-              thickness={2}
+              trailLength={0.3}
+              thickness={1.5}
               radius={28}
-              glow={1}
+              glow={0.7}
               hover="brighten"
               sparkle
               clickPulse

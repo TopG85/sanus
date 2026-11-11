@@ -1154,7 +1154,7 @@ p {
 }
 
 /* ===== NAVBAR ===== */
-
+/* Media queries for the site header and navigation menu */
 /* Desktop: brand left, menu sized to its links and pushed to the right */
 .site-header {
   display: flex;
